@@ -1,0 +1,62 @@
+{
+    "restaurants":[   
+
+    {
+        "id": 0,
+        "restaurantName": "Al-Sham",
+        "restaurantRating": 4.5,
+        "restaurantDesc": "Al Sham is a punjabi Dhaba in potheri. It is known for its classic tandoor delicacies and the must have , Biryani",
+        "restaurantTags": ["Authentic", "Biryani" , "Tandoor"],
+        "restaurantReviews":[
+            {
+                "userName": "Dewashish Dubey",
+                "reviewDate": "26/01/2024",
+                "userRating": 4.9,
+                "userReview": "Really Great food , and great ambience and staff. Food was great and had authentic taste. Biryani is a must have."
+            },
+            {
+                "userName": "Tanya SInha",
+                "reviewDate": "02/01/2024",
+                "userRating": 4.1,
+                "userReview": "Food was great and had authentic taste. Biryani is a must have.Really Great food , and great ambience and staff. "
+            }
+        ],
+        "MustHaves": [
+            {
+                "dishName": "Butter Chicken",
+                "dishRating": 4
+            }
+        ]
+
+    },
+    {
+        "id": 1,
+        "restaurantName": "Milan",
+        "restaurantRating": 4.2,
+        "restaurantDesc": "Milan is a punjabi Dhaba in potheri. It is known for its classic tandoor delicacies and the must have , Biryani",
+        "restaurantTags": ["Authentic", "Biryani" , "Tandoor"],
+        "restaurantReviews":[
+            {
+                "userName": "Dewashish Dubey",
+                "reviewDate": "26/01/2024",
+                "userRating": 4.9,
+                "userReview": "Really Great food , and great ambience and staff. Food was great and had authentic taste. Biryani is a must have."
+            },
+            {
+                "userName": "Tanya SInha",
+                "reviewDate": "02/01/2024",
+                "userRating": 4.1,
+                "userReview": "Food was great and had authentic taste. Biryani is a must have.Really Great food , and great ambience and staff. "
+            }
+        ],
+        "MustHaves": [
+            {
+                "dishName": "Biryani",
+                "dishRating": 4
+            }
+        ]
+
+    }
+]
+    
+}
