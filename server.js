@@ -8,19 +8,17 @@ const port = 3002
 
 
 app.get('/', (req, res) => {
-
-  // structure for req { id , user , rating(input) ,review(input) }
-
-  data.restaurants[req.body.id].restaurantReviews.push({ "username": req.body.user , "reviewDate": Date.now , "userRating": req.body.rating ,"userReview": req.body.review })
-  console.log("Data Added Successfully")
-
-
   res.send('Hello World')
 })
 
 
 app.get('/review', (req,res)=>{
   res.send("Hello From Review")
+   // structure for req { id , user , rating(input) ,review(input) }
+
+   data.restaurants[req.body.id].restaurantReviews.push({ "username": req.body.user , "reviewDate": Date.now , "userRating": req.body.rating ,"userReview": req.body.review })
+   console.log("Data Added Successfully")
+ 
 })
 
 
