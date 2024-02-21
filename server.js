@@ -36,7 +36,7 @@ app.post('/review', (req,res)=>{
 
     console.log(req.body)
 
-   data.restaurants[req.body.id].restaurantReviews.push({ "username": req.body.user , "reviewDate": Date.now , "userRating": req.body.rating ,"userReview": req.body.review })
+   data.restaurants[req.body.id].restaurantReviews.push({ "userName": req.body.user , "reviewDate": Date.now , "userRating": req.body.rating ,"userReview": req.body.review })
    datajson = JSON.stringify(data)
    fs.writeFileSync("data.json",datajson,"utf-8")
    console.log(data.restaurants[0].restaurantReviews)
