@@ -10,6 +10,9 @@
         "Biryani",
         "Tandoor"
       ],
+      "meal": "Lunch",
+      "preference": "NonVeg",
+      "coordinates": [12.849643130458364, 80.0647221958659],
       "restaurantReviews": [
         {
           "userName": "Dewashish Dubey",
@@ -49,6 +52,9 @@
         "Biryani",
         "Tandoor"
       ],
+      "meal": "Lunch",
+      "preference": "NonVeg",
+      "coordinates":[12.822747258152685, 80.04443913819455],
       "restaurantReviews": [
         {
           "userName": "Dewashish Dubey",
