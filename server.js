@@ -24,6 +24,11 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/itinerary',(req,res)=>{
+  res.send(itinerary)
+})
+
+
 
 app.post('/itinerary',(req,res)=>{
 
