@@ -1,0 +1,28 @@
+{
+  "itineraries": [
+    {
+      "userEmail": "tanya@gmail.com",
+      "location": "Chennai",
+      "startDate": "3/03/2024",
+      "endDate": "5/03/2024",
+      "preference": "Veg",
+      "meal": "Lunch",
+      "coordinates": [
+        12.820489093437436,
+        80.03731817360415
+      ]
+    },
+    {
+      "userEmail": "rupaj@gmail.com",
+      "location": "Pondicherry",
+      "startDate": "4/03/2024",
+      "endDate": "8/03/2024",
+      "preference": "NonVeg",
+      "meal": "Dinner",
+      "coordinates": [
+        12.820489093437436,
+        80.03731817360415
+      ]
+    }
+  ]
+}

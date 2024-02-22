@@ -6,6 +6,8 @@ const port = 3002
 
 const fs = require("fs");
 let datajson = fs.readFileSync("data.json","utf-8");
+let itineraryjson = fs.readFileSync("itinerary.json","utf-8");
+let itinerary = JSON.parse(itineraryjson)
 let data = JSON.parse(datajson)
 
 
@@ -19,6 +21,37 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.send('Hello World')
+})
+
+
+
+app.post('/itinerary',(req,res)=>{
+
+  // structure { userEmail, location , startDate , endDate ,preference , meal , coordinates }
+
+  // itinerary.itinerary[]
+
+  itinerary.itineraries.push(
+  {
+            "userEmail": req.body.userEmail,
+            "location": req.body.location,
+            "startDate": req.body.startDate,
+            "endDate": req.body.endDate,
+            "preference": req.body.preference,
+            "meal": req.body.meal,
+            "coordinates": req.body.coordinates
+
+  })
+
+
+  itineraryjson = JSON.stringify(itinerary)
+  fs.writeFileSync("itinerary.json",itineraryjson,"utf-8")
+   console.log(itinerary.itineraries)
+   console.log("Itinerary Added Successfully")
+
+
+
+
 })
 
 
