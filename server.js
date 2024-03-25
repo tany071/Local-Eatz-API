@@ -1,6 +1,8 @@
 // var data = require('./data.json');
 const express = require("express");
+const cors = require('cors')
 const app = express();
+app.use(cors());
 const port = 3002;
 
 const fs = require("fs");
